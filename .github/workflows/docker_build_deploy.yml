@@ -18,5 +18,5 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build --pull -t ${{ secrets.DOCKER_REGISTRY_IMAGE }} .
-          docker push ${{ secrets.DOCKER_REGISTRY_IMAGE }}
+          docker build --pull -t https://hub.docker.com/repository/docker/andreiionut1411/just_testing .
+          docker push https://hub.docker.com/repository/docker/andreiionut1411/just_testing
