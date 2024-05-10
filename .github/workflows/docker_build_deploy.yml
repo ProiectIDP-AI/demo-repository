@@ -18,5 +18,6 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build --pull -t https://hub.docker.com/repository/docker/andreiionut1411/just_testing .
-          docker push https://hub.docker.com/repository/docker/andreiionut1411/just_testing
+          docker build -t testare .
+          docker tag testare andreiionut1411/just_testing:latest
+          docker push andreiionut1411/just_testing:latest
